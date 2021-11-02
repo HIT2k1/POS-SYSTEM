@@ -1,0 +1,91 @@
+.cart {
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        background-color: #eee;
+        z-index: 10;
+    }
+    .container {
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0.25rem;
+        background-color: #fff;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        position: relative;
+        z-index: 100;
+    }
+    h4 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+        font-weight: 500;
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 45rem;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: 1rem 3rem;
+        img {
+            width: 8rem;
+            height: 8rem;
+        }
+        .dish {
+            h5 {
+                font-size: 2rem;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+            .icon,
+            input {
+                display: inline-block;
+                width: 3rem;
+                height: 3rem;
+                line-height: 3rem;
+                text-align: center;
+            }
+            .icon {
+                background-color: #0bbc61;
+                color: #fff;
+                cursor: pointer;
+            }
+            input {
+                outline: none;
+                border: 0;
+                font-size: 2rem;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        .price {
+            font-size: 2rem;
+            color: #0bbc61;
+        }
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}

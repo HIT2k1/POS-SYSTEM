@@ -1,0 +1,54 @@
+.menu {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+        gap: 1.5rem;
+        .item {
+            padding: 1rem;
+            border: 1px solid rgba(153, 136, 136, 0.582);
+            border-radius: 5px;
+            background-color: #fff;
+            position: relative;
+            .fa-heart {
+                text-align: center;
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+            }
+            img {
+                width: 100%;
+                height: 26rem;
+                object-fit: cover;
+                border-radius: 0.5rem;
+            }
+            .content {
+                padding: 1rem;
+            }
+            .stars {
+                margin-top: 1rem;
+                i {
+                    color: #0bbc61;
+                }
+            }
+            h3 {
+                font-size: 2.5rem;
+                font-weight: 500;
+                margin-top: 1rem;
+            }
+            .text {
+                line-height: 1.5;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu .list .item img {
+        width: 100%;
+        height: auto;
+    }
+}

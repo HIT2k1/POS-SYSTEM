@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="" class="logo"><i class="fas fa-utensils"></i>POS</a>
+            <nav class="navbar">
+                <ul class="navList">
+                    <li class="navItem active">
+                        <a href="index.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">HOME</span>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="dish.html">
+                            <span class="icon">
+                                <ion-icon name="fast-food-outline"></ion-icon>
+                            </span>
+                            <span class="text">MENU</span>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="cart.html">
+                            <span class="icon">
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </span>
+                            <span class="text">CART</span>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="proflie.html">
+                            <span class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                            <span class="text">PROFILE</span>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="">
+                            <span class="icon">
+                                <ion-icon name="settings-outline"></ion-icon>
+                            </span>
+                            <span class="text">MANAGE</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-bars" id="hamburgur"></i>
+                <i class="fas fa-search" id="search-bar"></i>
+                <a href="" id="login">Log in</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-box">
+        <form action="">
+            <input type="text" name="search" class="search-input" placeholder="search here...">
+            <i class="fas fa-search search-icon"></i>
+        </form>
+        <i class="fas fa-times search-close"></i>
+    </div>
+
+    <section class="dish-desc">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="image">
+                <img src="./images/dish-1.png" alt="">
+            </div>
+            <div class="info">
+                <h3>Hamburgur</h3>
+                <p class="field"><span class="title">Price:</span> $15.99</p>
+                <p class="field"><span class="title">Description:</span> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quidem a magnam aperiam quisquam 
+                    sed, incidunt mollitia! Laborum obcaecati quae consequatur iure? Temporibus ut debitis sed ipsum. Neque, 
+                    laboriosam facere.
+                 </p>
+                <div class="field quantity">
+                    <span class="title">Quantity:</span>
+                    <span class="icon">+</span>
+                    <input type="number" value="1">
+                    <span class="icon">-</span>
+                </div>
+                <button class="btn">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
